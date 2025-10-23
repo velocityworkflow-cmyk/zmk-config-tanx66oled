@@ -1,0 +1,27 @@
+if SHIELD_MY_KEYBOARD
+
+config ZMK_KEYBOARD_NAME
+    default "tanx66"
+
+config USB_DEVICE_PRODUCT
+      default "tanx66"
+
+    config BT_DEVICE_NAME
+      default "tanx66"
+
+    config I2C
+      default y
+
+    config SSD1306
+      default y
+
+    config SPI
+      default y
+
+    config ZMK_BLE
+	    default y
+
+    config ZMK_USB
+	    default y 
+
+endif
