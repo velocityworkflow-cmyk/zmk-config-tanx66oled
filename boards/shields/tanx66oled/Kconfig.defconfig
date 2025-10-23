@@ -1,13 +1,13 @@
-if SHIELD_MY_KEYBOARD
+if SHIELD_TANX66OLED
 
 config ZMK_KEYBOARD_NAME
-    default "tanx66"
+    default "tanx66oled"
 
 config USB_DEVICE_PRODUCT
-      default "tanx66"
+      default "tanx66oled"
 
     config BT_DEVICE_NAME
-      default "tanx66"
+      default "tanx66oled"
 
     config I2C
       default y
