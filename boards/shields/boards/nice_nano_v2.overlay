@@ -39,17 +39,6 @@
     pinctrl-0 = <&spi1_default>;
     pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
-
-    cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
-    shifter: 595@0 {
-        compatible = "zmk,gpio-595";
-        status = "okay";
-        gpio-controller;
-        spi-max-frequency = <4000000>;
-        reg = <0>;
-        #gpio-cells = <2>;
-        ngpios = <16>;
-    };
 };
 
 &i2c0 {
