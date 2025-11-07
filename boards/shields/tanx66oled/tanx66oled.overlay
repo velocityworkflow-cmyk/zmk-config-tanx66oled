@@ -7,9 +7,7 @@
         zephyr,display = &oled;
     };
 
-    /* --- Hall sensors (A1324 analog via ADC) ---
-       Ensure these ADC channel numbers match the pins you wired (you said ADC channels 0 and 5).
-       The ADC controller phandle on nRF52 boards is &adc (not &adc1). */
+    /* Hall sensors (A1324 analog via ADC) */
     &adc {
         status = "okay";
     };
@@ -72,6 +70,7 @@
         >;
     };
 };
+
 
 &spi1 {
     status = "okay";
