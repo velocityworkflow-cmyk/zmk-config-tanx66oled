@@ -12,11 +12,11 @@
         label = "default_kscan";
         diode-direction = "col2row";
 
-        row-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+        row-gpios = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                     <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                     <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+                    <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                    <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
         col-gpios = <&shifter 0 GPIO_ACTIVE_HIGH>,
                     <&shifter 1 GPIO_ACTIVE_HIGH>,
@@ -51,7 +51,7 @@
 
 &spi1 {
     status = "okay";
-    cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;
     shifter: 595@0 {
         compatible = "zmk,gpio-595";
         status = "okay";
