@@ -7,7 +7,6 @@
         zephyr,display = &oled;
     };
 
-    /* Hall sensors (A1324 analog via ADC) */
     &adc {
         status = "okay";
     };
@@ -70,7 +69,6 @@
         >;
     };
 };
-
 
 &spi1 {
     status = "okay";
