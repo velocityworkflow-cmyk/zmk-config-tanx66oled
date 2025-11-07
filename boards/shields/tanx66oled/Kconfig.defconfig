@@ -19,6 +19,8 @@ if ZMK_DISPLAY
 
 endif # ZMK_DISPLAY
 
+
+
 if LVGL
 
      config LV_Z_VDB_SIZE
