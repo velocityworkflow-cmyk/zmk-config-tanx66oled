@@ -83,7 +83,7 @@
             key-id = <1>;
         };
     };
-
+    
 &i2c0 {
     status = "okay";
     oled: ssd1306@3c {
