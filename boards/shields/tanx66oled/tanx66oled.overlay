@@ -63,6 +63,27 @@
     };
 };
 
+ &adc {
+        status = "okay";
+    };
+
+    hall_effect: hall_effect {
+        compatible = "velocityworkflow-cmyk,hall-effect-adc";
+        status = "okay";
+
+        hall_sensor_0: hall-sensor-0 {
+            io-channels = <&adc 0>;
+            label = "HALL_0_ADC";
+            key-id = <0>;
+        };
+
+        hall_sensor_1: hall-sensor-1 {
+            io-channels = <&adc 5>;
+            label = "HALL_1_ADC";
+            key-id = <1>;
+        };
+    };
+
 &i2c0 {
     status = "okay";
     oled: ssd1306@3c {

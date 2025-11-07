@@ -1,0 +1,27 @@
+menu "Hall Effect Module"
+
+config HALL_EFFECT
+    bool "Enable Hall Effect module"
+    default y
+
+config HALL_ADC_SAMPLES
+    int "Number of ADC samples to average"
+    default 8
+
+config HALL_ADC_SAMPLE_INTERVAL_MS
+    int "Interval between ADC samples (ms)"
+    default 4
+
+config HALL_ADC_HYST_MV
+    int "Hysteresis (mV)"
+    default 50
+
+config HALL_ADC_CALIBRATE_ON_BOOT
+    bool "Auto-calibrate on boot"
+    default y
+
+config HALL_SOCD_POLICY
+    int "SOCD policy (0=NEUTRAL,1=UP_PRIORITY,2=LAST)"
+    default 0
+
+endmenu
